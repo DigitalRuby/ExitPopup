@@ -34,6 +34,7 @@ Include the javascript in your html:
   opt.will_show = function() // optional, specify a function to execute before the popup shows
   {
     console.log('popup showing');
+    // return false to not show the popup
   };
 " async defer></script>
 </head>
