@@ -39,6 +39,8 @@ Include the javascript in your html:
 </head>
 ```
 
+You can include the source direct from github if desired: https://raw.githubusercontent.com/DigitalRuby/ExitPopup/main/src/digitalruby.exitpopup.js
+
 Next, setup the styles for the popup, and optionally a popup background:
 
 ```html
