@@ -14,7 +14,7 @@ const digitalruby_exitpopup_options =
 
 function digitalruby_exitpopup_reset_flag()
 {
-	localStorage.setItem('digitalruby.exitpopup.canShow', '1');
+	localStorage.setItem('digitalruby.exitpopup.can_show', '1');
 }
 
 function digitalruby_exitpopup_get(id, callback)
@@ -29,7 +29,7 @@ function digitalruby_exitpopup_get(id, callback)
 function digitalruby_show_exit_popup()
 {
 	if (!digitalruby_exitpopup_options.delay_expired ||
-		localStorage.getItem('digitalruby.exitpopup.canShow', '1') == '0')
+		localStorage.getItem('digitalruby.exitpopup.can_show', '1') == '0')
 	{
 		return;
 	}
@@ -39,7 +39,7 @@ function digitalruby_show_exit_popup()
 		digitalruby_exitpopup_options.will_show();
 	}
 	
-	localStorage.setItem('digitalruby.exitpopup.canShow', '0');
+	localStorage.setItem('digitalruby.exitpopup.can_show', '0');
 	digitalruby_exitpopup_get(digitalruby_exitpopup_options.background_element_id, function(e)
 	{
 		e.style.display = 'block';
