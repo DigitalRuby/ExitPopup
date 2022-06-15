@@ -33,51 +33,51 @@ Next, setup the styles for the popup, and optionally a popup background:
 /* it's recommended that your html fill the window to properly detect when the mouse leaves */
 html
 {
-	min-width: 100%;
-	min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* make body also fill window, minus the padding */
 body
 {
-	min-width: calc(100% - 40px);
-	min-height: calc(100% - 40px);
-	padding: 20px;
-	margin: 0;
-	font-family: 'Helvetica', 'Arial', sans-serif;
+  min-width: calc(100% - 40px);
+  min-height: calc(100% - 40px);
+  padding: 20px;
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 /* css for the popup, important notes are display of none and fixed position along with a high z index and centering */
 #digitalruby_exitpopup_div
 {
-	display: none;
-	position: fixed;
-	z-index: 999;
-	padding: 20px;
-	background-color: #222222;
-	color: #FFFFFF;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 300px;
-	max-height: 300px;
-	width: 75%;
-	height: 75%;
-	filter: drop-shadow(0px 0px 10px black);
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding: 20px;
+  background-color: #222222;
+  color: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  max-height: 300px;
+  width: 75%;
+  height: 75%;
+  filter: drop-shadow(0px 0px 10px black);
 }
 
 /* css for the popup background, also display of none and fixed position along with filling the viewport */
 #digitalruby_exitpopup_div_background
 {
-	display: none;
-	position: fixed;
-	background-color: rgba(20, 20, 20, 0.5);
-	z-index: 0;
-	transform: translate(0%, 0%);
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
+  display: none;
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.5);
+  z-index: 0;
+  transform: translate(0%, 0%);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 ```
 
