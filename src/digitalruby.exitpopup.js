@@ -36,7 +36,11 @@ function digitalruby_show_exit_popup()
 	
 	if (digitalruby_exitpopup_options.will_show != null)
 	{
-		digitalruby_exitpopup_options.will_show();
+		const result = digitalruby_exitpopup_options.will_show();
+		if (result === false)
+		{
+			return;
+		}
 	}
 	
 	localStorage.setItem('digitalruby.exitpopup.can_show', '0');
