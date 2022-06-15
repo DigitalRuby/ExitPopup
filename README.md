@@ -12,17 +12,17 @@ Include the javascript in your html:
 <head>
 
 <script src="digitalruby.exitpopup.js" type="text/javascript" onload="
-	const opt = digitalruby_exitpopup_options;
-	opt.element_id = 'digitalruby_exitpopup_div'; // required
-	opt.background_element_id = 'digitalruby_exitpopup_div_background'; // optional
-	opt.top_only = false; // default false, whether popup shows only through top exit or all exits
-	opt.click_outside_to_close = true; // default true, whether clicking outside the popup will close it
-	opt.delay = 3000; // delay before allowing popup to show, default is 3000 milliseconds
-	opt.path_regex = ''; // optional, specify a regex to filter the path on, if no match, exit popup will not show
+  const opt = digitalruby_exitpopup_options;
+  opt.element_id = 'digitalruby_exitpopup_div'; // required
+  opt.background_element_id = 'digitalruby_exitpopup_div_background'; // optional
+  opt.top_only = false; // default false, whether popup shows only through top exit or all exits
+  opt.click_outside_to_close = true; // default true, whether clicking outside the popup will close it
+  opt.delay = 3000; // delay before allowing popup to show, default is 3000 milliseconds
+  opt.path_regex = ''; // optional, specify a regex to filter the path on, if no match, exit popup will not show
   opt.will_show = function() // optional, specify a function to execute before the popup shows
-	{
-		console.log('popup showing');
-	};
+  {
+    console.log('popup showing');
+  };
 " async defer></script>
 </head>
 ```
