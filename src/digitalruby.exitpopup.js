@@ -126,6 +126,10 @@ function digitalruby_hide_exit_popup()
 				digitalruby_exitpopup_options.delay_expired = true;
 			}, digitalruby_exitpopup_options.delay);
 		}
+		else
+		{
+			digitalruby_exitpopup_options.delay_expired = true;
+		}
 	}, 100);
 	console.log("Digital Ruby exit popup initialized - https://github.com/DigitalRuby/ExitPopup");
 }
