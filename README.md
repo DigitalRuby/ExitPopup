@@ -39,7 +39,7 @@ Include the javascript in your html:
 </head>
 ```
 
-You can include the source direct from github if desired: https://raw.githubusercontent.com/DigitalRuby/ExitPopup/main/src/digitalruby.exitpopup.js
+You can include the source direct from github if desired: https://raw.githubusercontent.com/DigitalRuby/ExitPopup/main/src/digitalruby.exitpopup.js. You will need to use a service like jsdelivr to get the correct mime type.
 
 Next, setup the styles for the popup, and optionally a popup background:
 
