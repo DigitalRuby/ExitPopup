@@ -10,6 +10,10 @@
 - Customization options for behavior
 - User defined css, no hidden css or other customizations
 
+### Demo
+
+https://digitalruby.github.io/ExitPopup/src/index.html
+
 ### Usage
 
 Include the javascript in your html:
