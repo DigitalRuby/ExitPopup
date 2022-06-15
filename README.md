@@ -2,7 +2,15 @@
 
 ## Simple Exit Popup in Plain Javascript
 
-Usage:
+### Goals
+
+- Vanilla javascript, no 3rd party dependencies
+- Easy to use API
+- Use existing dom element
+- Customization options for behavior
+- User defined css, no hidden css or other customizations
+
+### Usage
 
 Include the javascript in your html:
 
@@ -99,7 +107,7 @@ This is the exit popup.<br/>
 
 Notes:
 
-The exit popup will put a flag in local storage to prevent it showing again and again. You can clear this flag by calling `digitalruby_exitpopup_reset_flag();`.
+The exit popup will put a flag in local storage called `digitalruby.exitpopup.can_show` to prevent it showing again and again. You can clear this flag by calling `digitalruby_exitpopup_reset_flag();`
 
 Thanks for visiting!
 
